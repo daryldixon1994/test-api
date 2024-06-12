@@ -25,6 +25,9 @@ app.get("/api/users", (req, res) => {
   res.json({ status: true, data: users });
 });
 
+app.get("/api/test", (req, res) => {
+  res.send("<h1>WELCOME TO OUR API SERVER</h1>");
+});
 app.listen(5000, (err) => {
   if (err) throw err;
   console.log("SERVER IS UP AND RUNNING ON PORT 5000");
